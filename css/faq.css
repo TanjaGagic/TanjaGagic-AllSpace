@@ -1,0 +1,408 @@
+
+
+body {
+ background-image: url("/GalacticX/slike/pozadina.jpg");
+ background-size:cover;
+ height: 100%
+  
+}
+html {
+	height:100%; 
+	font-family: Arial;
+}
+
+#header-slika {
+	width: 100%;
+  height: auto;
+}
+
+#container-main {
+	width: 65%;
+	margin: 0 auto;
+}
+
+.carousfredsel_wrapper {
+	 
+	display: block; 
+	text-align: left; 
+	float: none; 
+	position: absolute; 
+	top: auto; 
+	right: auto; 
+	bottom: auto; 
+	left: auto; 
+	z-index: auto; 
+	width: 948px; 
+	margin: 0px; 
+	overflow: hidden; 
+	height: 285px;
+}
+.eltd-info-card-slider-holder {
+
+text-align: left; 
+float: none; 
+position: absolute; 
+top: 10px; 
+right: auto; 
+bottom: auto; 
+left: 0px; 
+margin: 0px auto; 
+width: 100%; 
+display: block; 
+opacity: 1;
+padding-top: 10%
+
+}
+
+.eltd-info-card-slider-holder {
+	width: 100%;
+}
+
+.eltd-info-card-slider-item {
+	position:relative;
+	display:inline-block;
+	float:left;
+	margin:0 10px;
+	text-align:center;
+	-webkit-perspective:800;
+	height:285px}
+
+.eltd-info-card-slider-item:hover{cursor:auto}
+
+.eltd-info-card-slider-item .front-side,.eltd-info-card-slider-item .back-side {
+	box-sizing:border-box;
+	position:absolute;
+	width:100%;
+	height:100%;
+	-webkit-transition:all .5s ease-in-out;
+	transition:all .5s ease-in-out;
+	-webkit-backface-visibility:hidden;
+	backface-visibility:hidden;
+	padding:45px 20px 30px
+}
+
+.eltd-info-card-slider-item .front-side {
+	border:2px solid #dadada;
+	background-color:#fff;
+	-webkit-transform:rotateY(0deg);
+	transform:rotateY(0deg)
+}
+
+.eltd-info-card-slider-item .back-side {
+	padding:0;
+	border:2px solid #e5735c;
+	background-color:#e5735c;
+	-webkit-transform:rotateY(-180deg);
+	transform:rotateY(-180deg);
+	display:table
+}
+.eltd-info-card-slider-item .back-side .back-side-inner {
+	padding:0 25px;
+	display:table-cell;
+	top:50%;vertical-align:middle
+}
+
+.eltd-info-card-slider-item:hover .front-side {
+	-webkit-transform:rotateY(180deg);
+	transform:rotateY(180deg)
+	}
+
+.eltd-info-card-slider-item:hover .back-side {
+	-webkit-transform:rotateY(0deg);
+	transform:rotateY(0deg)
+	}
+
+.eltd-info-card-slider-item .eltd-info-card-icon {
+	font-size:55px;
+	color:#e5735c
+	}
+
+.eltd-info-card-slider-item .front-side h5 {
+	padding:16px 0;
+	position:relative
+	}
+
+.eltd-info-card-slider-item .front-side h5:after 
+{
+	content:'';
+	display:inline-block;
+	width:25px;
+	height:2px;
+	background-color:#dadada;
+	position:absolute;
+	bottom:0;left:50%;
+	transform:translateX(-50%)
+	}
+
+.eltd-info-card-slider-item .front-side p {
+	padding-top:20px
+	}
+
+.eltd-info-card-slider-item .back-side p {
+	color:#fff
+	}
+
+.eltd-info-card-slider-pagination {
+	text-align:center
+	}
+
+.eltd-info-card-slider-pagination a {
+	display:inline-block;
+	position:relative;
+	width:19px;
+	height:19px;
+	box-sizing:border-box;
+	vertical-align:middle;
+	margin-right:2px
+	}
+
+.eltd-info-card-slider-pagination a.selected {
+	margin-left:4px;
+	margin-right:6px
+	}
+
+.eltd-info-card-slider-pagination a span {
+	display:inline-block;
+	border-radius:50%;
+	vertical-align:middle;
+	background-color:transparent;
+	width:3px;
+	height:3px;
+	border-width:0;
+	position:relative;
+	top:-4px
+	}
+
+.eltd-info-card-slider-pagination a span:before {
+	content:"";
+	width:3px;
+	height:3px;
+	position:absolute;
+	border:2px solid #dadada;
+	display:inline-block;
+	left:-4px;
+	top:-4px;
+	padding:2px;
+	border-radius:50%
+	}
+
+.eltd-info-card-slider-pagination a.selected span {
+	width:9px;
+	height:9px;
+	background-color:#e5735c
+	}
+
+.eltd-info-card-slider-pagination a.selected span:before {
+	width:9px;
+	height:9px;
+	border-color:#e5735c
+	}
+
+.container aside.sidebar {
+	position:relative;
+	z-index:11
+	}
+
+aside.sidebar {
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box
+	}
+
+.side_menu .widget li {
+	margin:0 0 7px;
+	font-family:inherit;
+	font-size:14px;
+	color:inherit;
+	-webkit-transition:color .15s ease-out;
+	-moz-transition:color .15s ease-out;
+	-ms-transition:color .15s ease-out;
+	-o-transition:color .15s ease-out;
+	transition:color .15s ease-out
+	}
+
+.single_tags a,aside.sidebar .widget .tagcloud a,.widget .tagcloud a {
+	color:#464646;
+	border-width:2px;
+	border-style:solid;
+	border-color:#dadada;
+	padding:0 17px;
+	line-height:40px;
+	height:38px;
+	display:inline-block;
+	vertical-align:middle;
+	font-size:11px!important;
+	font-weight:700;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	-webkit-transition:
+		background-color .15s ease-out,
+		border-color .15s ease-out,
+		color .15s ease-out;
+	-moz-transition:
+		background-color .15s ease-out,
+		border-color .15s ease-out,
+		color .15s ease-out;
+	-ms-transition:
+		background-color .15s ease-out,
+		border-color .15s ease-out,
+		color .15s ease-out;
+	-o-transition:
+		background-color .15s ease-out,
+		border-color .15s ease-out,
+		color .15s ease-out;
+	transition:
+		background-color .15s ease-out,
+		border-color .15s ease-out,
+		color .15s ease-out
+	}
+
+
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+    overflow: hidden;
+    background-color: black;
+    opacity: 100%;
+    font-family: Arial;
+}
+
+.container a {
+	width: auto;
+    float: left;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#wrap {
+	display: grid;
+	grid-template-rows: [prva] 70px [druga] auto [treca];
+	grid-gap: 15px;
+	width: 100%;
+	height: 100%;
+}
+
+#sredina {
+	display: grid;
+	grid-template-rows: [prva] 50px [druga] auto [treca] 200px [cetvrta];
+	grid-gap: 10px;
+	width: 100%;
+	height: 100%;
+	place-content: center;
+}
+
+.pitanje {
+	
+	width: 100%;
+	height: 100%;
+	place-content: center;
+	margin: 20px 0 10px 10px;
+
+}
+
+header {
+	height: 45px;
+	display: grid;
+	justify-content: center;
+	color: white ; /*boja naslova*/
+}
+
+#registracija {
+	width: 50%;
+	height: 85%;
+	place-content: center;
+	padding: 0 0 0 0;
+	
+	margin: 0 0 50px 10px;
+}
+
+.dugme {
+	background-color: gray; 
+}
+
+.dugme:hover {
+	background-color: white; /*boja kad predjes misem preko*/
+}
+
+.q {
+	color: white; /*boja pitanja*/
+	font-size: 25px;
+}
+
+h2 {
+	color:white;
+}
+
+p {
+	color: white;
+}
+
+.odgovor {
+	color:#e5735c;
+}
+
+
+
+
+@media (max-width: 400px) {
+    .container #container-main {
+        top: 50%; 
+        left: 50%; 
+        display: block;
+        position: absolute;
+        width: 750px;
+        height: 417px;
+
+        margin-top: -208.5px; /* HALF OF THE HEIGHT */
+        margin-left: -375px; /* HALF OF THE WIDTH */
+    }
+}
+
