@@ -1,0 +1,190 @@
+body {
+ background-image: url("/GalacticX/slike/pozadina.jpg");
+ background-size:cover;
+ height: 100%
+  
+}
+html {
+    height:100%; 
+}
+
+
+
+
+#container {
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dadada;
+}
+
+#header {
+    color: black;
+    font-size: large;
+}
+#flights{
+    font-size: medium;
+    
+}
+
+.booking-form-box{
+    max-width: 400px;
+    border: 1px solid #ced4da;
+    margin: 10% auto 0;
+
+    
+}
+
+.radio-btn{
+    margin ;
+}
+.radio-btn .btn{
+    margin: 20px 10px 20px 0;
+    box-shadow: none;
+}
+.radio-btn .btn: : after {
+    content: '';
+    height: 35px;
+    width: 40px;
+    top: -2px;
+    left: -1px;
+    background-color: #fff;
+    position: relative;
+    display: inline-block;
+    border: 3px solid #fff;
+    visibility: visible;
+    border-radius: 50%;
+}
+.radio-btn span{
+    color: #fff;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.booking-form {
+    max-width: 400px;
+    border: 1px solid #ced4da;
+    margin: 10% auto 0;
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
+
+  .select-items div,.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+  }
+
+  .select-items {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: black;
+    opacity: 80%;
+    font-family: Arial;
+}
+
+
+     
+ 
+.container a {
+    width: auto;
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.icons {
+    height: 40px;
+    width: 40px;
+}
+
+
