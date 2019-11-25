@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../GalacticX/css/galerija.css">
+    <title>AllPeace</title>
+    
+    <script scr="../GalacticX/skripte/skripta.js"></script>
+</head>
+<body>
+
+
+
+
+
+<!-- meni -->
+<div class = "landing">
+<div class="container">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">About AllPeace</button>
+    <div class="dropdown-content">
+       <a href="https://www.youtube.com/watch?v=ygevBQWt_LE&list=PL3r-Yu9CBDbzTIMKMJsUmzLcpYauZ87-x">Video tours</a>
+       <a href="FAQ.html">FAQ</a>
+    </div>
+  </div> 
+  <a href="galerija.html">Galery</a>
+  <a href="forma.html">Book a flight</a>
+</div> 
+<div class = "wrapper">
+tekst
+</div>
+</div>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="/GalacticX/slike/2.jpg" style="width:100%">
+  <img class="mySlides" src="/GalacticX/slike/3.jpg" style="width:100%">
+  <img class="mySlides" src="/GalacticX/slike/4.jpg" style="width:100%">
+  <img class="mySlides" src="/GalacticX/slike/5.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+
+</body>
+</html>
